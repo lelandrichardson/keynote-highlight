@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keynote Syntax Highlighter</title>
+  <link href="node_modules/codemirror/lib/codemirror.css" rel="stylesheet" />
+  <link href="node_modules/highlightjs/styles/solarized_dark.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="panel panel-top">
+      <select class="language-select">
+        <option value="javascript">JavaScript</option>
+        <option value="ruby">Ruby</option>
+        <option value="sql">SQL</option>
+        <option value="java">Java</option>
+        <option value="css">CSS</option>
+        <option value="scss">SCSS</option>
+        <option value="scala">Scala</option>
+        <option value="php">PHP</option>
+        <option value="coffee">CoffeeScript</option>
+        <option value="html">HTML</option>
+        <option value="erb">ERB</option>
+      </select>
+    </div>
+    <div class="panel panel-left">
+      <textarea class="input"></textarea>
+    </div>
+    <div class="panel panel-right">
+      <pre class="preview js"></pre>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/lodash/index.js"></script>
+  <script src="node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="node_modules/codemirror/lib/codemirror.js"></script>
+  <script src="node_modules/codemirror/mode/xml/xml.js"></script>
+  <script src="node_modules/codemirror/mode/javascript/javascript.js"></script>
+  <script src="node_modules/codemirror/mode/ruby/ruby.js"></script>
+  <script src="node_modules/codemirror/mode/sql/sql.js"></script>
+  <script src="node_modules/codemirror/mode/clike/clike.js"></script>
+  <script src="node_modules/codemirror/mode/css/css.js"></script>
+  <script src="node_modules/codemirror/mode/php/php.js"></script>
+  <script src="node_modules/codemirror/mode/coffeescript/coffeescript.js"></script>
+  <script src="node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
