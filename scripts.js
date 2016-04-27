@@ -69,6 +69,8 @@ var MODES = {
 var $input = $(".input");
 var $preview = $(".preview");
 var $language = $(".language-select");
+var $fontFamily = $(".font-family");
+var $fontSize = $(".font-size");
 
 $preview.text($input.val());
 
@@ -105,4 +107,12 @@ $language.on('change', function() {
     .addClass('preview')
     .addClass(mode.hljs);
   editor.setOption("mode", mode.cm);
+});
+
+$fontFamily.on('keyup', function() {
+  $preview.css('font-family', $fontFamily.val());
+});
+
+$fontSize.on('keyup', function() {
+  $preview.css('font-size', $fontSize.val());
 });
