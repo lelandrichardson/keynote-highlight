@@ -26,12 +26,12 @@ html, body {
 }
 
 .panel-top {
-  height: 40px;
+  height: 80px;
   width: 668px;
 }
 
 .panel-left {
-  top: 40px;
+  top: 80px;
   width: 668px;
 }
 
@@ -41,8 +41,7 @@ html, body {
   overflow: scroll;
 }
 
-.language-select {
-  width: 100%;
+.config {
   height: 40px;
   line-height: 40px;
   font-size: 19px;
@@ -51,8 +50,22 @@ html, body {
   border-radius: 0;
   background-color: #fff;
   color: #666;
-  font-family: Menlo, monospace;
+  font-family: Menlo, Consolas, monospace;
   border: 0;
+  outline: none;
+}
+
+.font-family {
+  width: 82%;
+}
+
+.font-size {
+  width: 10%;
+  float: right;
+}
+
+.language-select {
+  width: 100%;
   border-bottom: 1px solid #666;
   outline: none;
 }
@@ -68,7 +81,7 @@ html, body {
   padding: 10px;
   font-size: 40px;
   font-weight: bold;
-  font-family: Menlo, monospace;
+  font-family: Menlo, Consolas, monospace;
 }
 
 .hljs {
